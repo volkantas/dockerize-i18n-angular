@@ -134,3 +134,12 @@ Run `npm run start-en` for a dev server. Navigate to `http://localhost:4200/`. T
 | Turkish  | English |
 | ------------- | ------------- |
 | `http://localhost/tr/`  | `http://localhost/en/`  |
+
+<br><br>
+## Add & change language
+
+Changes needed for these:
+* package.json > scripts 
+* angular.json > ... > build > configurations > dev-{lang}
+* angular.json > ... > build > configurations > production-{lang}
+* angular.json > ... > serve > configurations > {lang}
