@@ -48,11 +48,11 @@ Click the link for more detail https://github.com/ngx-translate/i18n-polyfill
 
 Run `npm run generate-i18n` to generate i18n files into locale folder. locale/messages.xlf, locale/messages.tr.xlf, locale/messages.en.xlf
 
-## Serve app in Turkish
+## Serve in Turkish
 
 Run `npm run start-tr` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
 
-## Serve app in English
+## Serve in English
 
 Run `npm run start-en` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
 
