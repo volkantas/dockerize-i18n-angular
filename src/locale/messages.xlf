@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xliff version="1.2" xmlns="urn:oasis:names:tc:xliff:document:1.2">
+  <file source-language="tr" datatype="plaintext" original="ng2.template">
+    <body>
+      <trans-unit id="687f551882089d0fc824fef1e3a7fa430eecfd5d" datatype="html">
+        <source>Merhaba Dünya</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/app.component.html</context>
+          <context context-type="linenumber">1</context>
+        </context-group>
+      </trans-unit><trans-unit id="8f0301b64b90846d7bf84a0519e087ad3f788234" datatype="html">
+        <source>
+  Bu yazı bir çok dilde görüntülenebilir.
+</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/app.component.html</context>
+          <context context-type="linenumber">3</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="88fe7b194cba7d237319098d3be9e96ee938ac21" datatype="html">
+        <source>Typescript tarafında da dil desteği bu şekilde kullanılıyor.</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/app.component.ts</context>
+          <context context-type="linenumber">1</context>
+        </context-group>
+      </trans-unit>
+    </body>
+  </file>
+</xliff>

@@ -1,0 +1,51 @@
+{
+  "name": "dockerize-i18n-angular",
+  "version": "0.1.0",
+  "scripts": {
+    "ng": "ng",
+    "start-tr": "node --max_old_space_size=6144 node_modules/@angular/cli/bin/ng serve --configuration tr --open",
+    "start-en": "node --max_old_space_size=6144 node_modules/@angular/cli/bin/ng serve --configuration en --open",
+    "build-i18n": "for lang in tr en; do node --max_old_space_size=6144 ./node_modules/@angular/cli/bin/ng build --prod --configuration=production-$lang; done",
+    "merge-i18n-files": "xliffmerge --profile xliffmerge.json tr en",
+    "generate-i18n-ts": "node ./node_modules/@ngx-translate/i18n-polyfill/extractor/ngx-extractor -i 'src/**/*.ts' -f xlf -o src/locale/messages.xlf",
+    "generate-i18n-html": "ng xi18n --out-file src/locale/messages.xlf --format xlf",
+    "generate-i18n": "npm run generate-i18n-html && npm run generate-i18n-ts && npm run merge-i18n-files"
+  },
+  "private": true,
+  "dependencies": {
+    "@angular/animations": "~9.0.3",
+    "@angular/common": "~9.0.3",
+    "@angular/compiler": "~9.0.3",
+    "@angular/core": "~9.0.3",
+    "@angular/forms": "~9.0.3",
+    "@angular/localize": "^9.0.4",
+    "@angular/platform-browser": "~9.0.3",
+    "@angular/platform-browser-dynamic": "~9.0.3",
+    "@angular/router": "~9.0.3",
+    "@ngx-translate/i18n-polyfill": "^1.0.0",
+    "rxjs": "~6.5.4",
+    "tslib": "^1.10.0",
+    "zone.js": "~0.10.2"
+  },
+  "devDependencies": {
+    "@angular-devkit/build-angular": "~0.900.4",
+    "@angular/cli": "~9.0.4",
+    "@angular/compiler-cli": "~9.0.3",
+    "@angular/language-service": "~9.0.3",
+    "@types/jasmine": "~3.5.0",
+    "@types/jasminewd2": "~2.0.3",
+    "@types/node": "^13.7.7",
+    "codelyzer": "^5.1.2",
+    "jasmine-core": "~3.5.0",
+    "jasmine-spec-reporter": "~4.2.1",
+    "karma": "~4.3.0",
+    "karma-chrome-launcher": "~3.1.0",
+    "karma-coverage-istanbul-reporter": "~2.1.0",
+    "karma-jasmine": "~2.0.1",
+    "karma-jasmine-html-reporter": "^1.4.2",
+    "protractor": "~5.4.3",
+    "ts-node": "~8.3.0",
+    "tslint": "~5.18.0",
+    "typescript": "~3.7.5"
+  }
+}

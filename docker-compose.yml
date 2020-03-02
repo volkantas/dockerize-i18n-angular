@@ -1,0 +1,7 @@
+version: '3'
+services:
+  dockerize-i18n-angular:
+    image: dockerize-i18n-angular
+    build: .
+    ports:
+      - '80:80'
