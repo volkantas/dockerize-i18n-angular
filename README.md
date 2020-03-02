@@ -36,7 +36,8 @@ import { I18n } from "@ngx-translate/i18n-polyfill";
 })
 export class AppComponent {
   constructor(i18n: I18n) {
-    console.log(i18n("This is a test {{myVar}} !", {myVar: "^_^"}));
+    console.log(i18n("This test for basic exmaple"));
+    console.log(i18n("This is another test {{myVar}} !", {myVar: "^_^"}));
   }
 }
 ```
