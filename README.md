@@ -1,7 +1,6 @@
 # DockerizeI18nAngular [![Actions Status](https://github.com/volkantas/dockerize-i18n-angular/workflows/CI/badge.svg)](https://github.com/volkantas/dockerize-i18n-angular/actions)
 
 #### :earth_americas: This is a starter applicaton for multilingual angular 9 project.
-<br><br>
 | Details |
 | :------|
 | Easy to use with HTML and Typescript   |
@@ -10,7 +9,6 @@
 | Docker support, nginx using for server - `docker-compose up`    |
 | This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 9.0.4.    |
 
-<br><br>
 
 | Build Steps |
 | :------|
