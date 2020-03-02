@@ -1,6 +1,6 @@
 # DockerizeI18nAngular [![Actions Status](https://github.com/volkantas/dockerize-i18n-angular/workflows/CI/badge.svg)](https://github.com/volkantas/dockerize-i18n-angular/actions)
 
-#### This is a starter applicaton for multilingual angular project.
+#### :earth_americas: This is a starter applicaton for multilingual angular 9 project.
 <br><br>
 | Details |
 | :------|
@@ -77,6 +77,15 @@ Run `npm run start-tr` for a dev server. Navigate to `http://localhost:4200/`. T
 Run `npm run start-en` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
 
 <br><br>
+## Add & change language
+
+:warning: Don't forget to check following codes for adding or removing languages:
+* :file_folder: package.json > scripts 
+* :file_folder: angular.json > ... > build > configurations > dev-{lang}
+* :file_folder: angular.json > ... > build > configurations > production-{lang}
+* :file_folder: angular.json > ... > serve > configurations > {lang}
+
+<br><br>
 ## Sample of auto generated .xlf file (locale/messages.en.xlf)
 
 ```sh
@@ -134,12 +143,3 @@ Run `npm run start-en` for a dev server. Navigate to `http://localhost:4200/`. T
 | Turkish  | English |
 | ------------- | ------------- |
 | `http://localhost/tr/`  | `http://localhost/en/`  |
-
-<br><br>
-## Add & change language
-
-Changes needed for these:
-* package.json > scripts 
-* angular.json > ... > build > configurations > dev-{lang}
-* angular.json > ... > build > configurations > production-{lang}
-* angular.json > ... > serve > configurations > {lang}
