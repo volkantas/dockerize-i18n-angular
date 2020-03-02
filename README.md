@@ -1,12 +1,13 @@
-# DockerizeI18nAngular
+# DockerizeI18nAngular [![Actions Status](https://github.com/volkantas/dockerize-i18n-angular/workflows/CI/badge.svg)](https://github.com/volkantas/dockerize-i18n-angular/actions)
 
-This is a starter applicaton for multilingual angular project.
+#### This is a starter applicaton for multilingual angular project.
 
-Details:
-* Easy to use on both side HTML and Typescript
-* Easy to generate & merge i18n files .xlf format | `npm run generate-i18n`
-* Multiple build for different languages | `npm run i18n-build`
-* Docker support, nginx using for server | `docker-compose up`
+| Details |
+| :------|
+| Easy to use on both side HTML and Typescript   |
+| Easy to generate & merge i18n files .xlf format | `npm run generate-i18n` |
+| Multiple build for different languages | `npm run i18n-build`    |
+| Docker support, nginx using for server | `docker-compose up`    |
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 9.0.4.
 
