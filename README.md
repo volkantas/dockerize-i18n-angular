@@ -118,7 +118,7 @@ Run `npm run start-en` for a dev server. Navigate to `http://localhost:4200/`. T
 
 * Run `npm run i18n-build` to build the project. 
 * The build artifacts will be stored in the `dist/` directory. 
-* Extract 2 folder :
+* Extract 2 folders :
 
 | Turkish  | English |
 | ------------- | ------------- |
