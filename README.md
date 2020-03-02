@@ -17,6 +17,7 @@
 | Add i18n attribute for multilanguage texts like `<h1 i18n>Title</h1>` |
 | For typescript, inject I18n service and use like `i18n("This test for basic exmaple")` |
 | Generate i18n - `npm run generate-i18n` |
+| Translate .xlf files by manual or use xlf editors |
 | Build project using Docker - `docker-compose up` |
 | Run project from `http://localhost/tr/` or `http://localhost/en/` |
 
