@@ -5,11 +5,18 @@
 | Details |
 | :------|
 | Easy to use with HTML and Typescript   |
-| Easy to generate & merge i18n files to .xlf format | `npm run generate-i18n` |
-| Multiple build for different languages | `npm run i18n-build`    |
-| Docker support, nginx using for server | `docker-compose up`    |
+| Easy to generate & merge i18n files to .xlf format - `npm run generate-i18n` |
+| Multiple build for different languages - `npm run i18n-build`    |
+| Docker support, nginx using for server - `docker-compose up`    |
+| This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 9.0.4.    |
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 9.0.4.
+| Build Steps |
+| :------|
+| Add i18n attribute for multilanguage texts like `<h1 i18n>Title</h1>` |
+| For typescript, inject I18n service and use like `i18n("This test for basic exmaple")` |
+| Generate i18n - `npm run generate-i18n` |
+| Build project using Docker - `docker-compose up` |
+| Run project from `http://localhost/tr/` or `http://localhost/en/` |
 
 ## HTML usage
 
@@ -47,7 +54,11 @@ Click the link for more detail https://github.com/ngx-translate/i18n-polyfill
 
 ## Generate or update i18n files
 
-Run `npm run generate-i18n` to generate i18n files into locale folder. locale/messages.xlf, locale/messages.tr.xlf, locale/messages.en.xlf
+Run `npm run generate-i18n` to generate i18n files into locale folder.
+
+| Original  | Turkish  | English |
+| ------------- | ------------- | ------------- |
+| `locale/messages.xlf`  | `locale/messages.tr.xlf`  | `locale/messages.en.xlf` |
 
 ## Serve in Turkish
 
@@ -95,9 +106,20 @@ Run `npm run start-en` for a dev server. Navigate to `http://localhost:4200/`. T
 
 ## Build
 
-Run `npm run i18n-build` to build the project. Extract 2 folder (tr and en folders) The build artifacts will be stored in the `dist/` directory. Use the `--prod` flag for a production build.
+* Run `npm run i18n-build` to build the project. 
+* The build artifacts will be stored in the `dist/` directory. 
+* Extract 2 folder :
+
+| Turkish  | English |
+| ------------- | ------------- |
+| `dist/tr/`  | `dist/en/` |
 
 ## Docker Build
 
-Run `docker-compose up` to dockerize the project. It use nginx, you can check settings from nginx.conf file.
-After run docker compose, run to app from `http://localhost/tr/` or `http://localhost/en/` 
+* Run `docker-compose up` to dockerize the project. 
+* It use nginx, you can check settings from nginx.conf file.
+* After run docker compose, run to app from :
+
+| Turkish  | English |
+| ------------- | ------------- |
+| `http://localhost/tr/`  | `http://localhost/en/`  |
