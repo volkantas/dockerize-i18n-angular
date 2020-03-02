@@ -1,7 +1,7 @@
 # DockerizeI18nAngular [![Actions Status](https://github.com/volkantas/dockerize-i18n-angular/workflows/CI/badge.svg)](https://github.com/volkantas/dockerize-i18n-angular/actions)
 
 #### This is a starter applicaton for multilingual angular project.
-
+<br><br>
 | Details |
 | :------|
 | Easy to use with HTML and Typescript   |
@@ -9,6 +9,8 @@
 | Multiple build for different languages - `npm run i18n-build`    |
 | Docker support, nginx using for server - `docker-compose up`    |
 | This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 9.0.4.    |
+
+<br><br>
 
 | Build Steps |
 | :------|
@@ -18,6 +20,8 @@
 | Build project using Docker - `docker-compose up` |
 | Run project from `http://localhost/tr/` or `http://localhost/en/` |
 
+
+<br><br>
 ## HTML usage
 
 ```sh
@@ -32,6 +36,7 @@
 ```
 Click the link for more detail https://angular.io/guide/i18n
 
+<br><br>
 ## Typescript usage
 
 ```sh
@@ -52,6 +57,7 @@ export class AppComponent {
 
 Click the link for more detail https://github.com/ngx-translate/i18n-polyfill
 
+<br><br>
 ## Generate or update i18n files
 
 Run `npm run generate-i18n` to generate i18n files into locale folder.
@@ -60,14 +66,17 @@ Run `npm run generate-i18n` to generate i18n files into locale folder.
 | ------------- | ------------- | ------------- |
 | `locale/messages.xlf`  | `locale/messages.tr.xlf`  | `locale/messages.en.xlf` |
 
+<br><br>
 ## Serve in Turkish
 
 Run `npm run start-tr` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
 
+<br><br>
 ## Serve in English
 
 Run `npm run start-en` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
 
+<br><br>
 ## Sample of auto generated .xlf file (locale/messages.en.xlf)
 
 ```sh
@@ -104,6 +113,7 @@ Run `npm run start-en` for a dev server. Navigate to `http://localhost:4200/`. T
 </xliff>
 ```
 
+<br><br>
 ## Build
 
 * Run `npm run i18n-build` to build the project. 
@@ -114,6 +124,7 @@ Run `npm run start-en` for a dev server. Navigate to `http://localhost:4200/`. T
 | ------------- | ------------- |
 | `dist/tr/`  | `dist/en/` |
 
+<br><br>
 ## Docker Build
 
 * Run `docker-compose up` to dockerize the project. 
