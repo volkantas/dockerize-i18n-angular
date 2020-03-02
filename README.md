@@ -1,10 +1,12 @@
 # DockerizeI18nAngular
 
-* Easy to use for HTML and Typescript
+This is a starter applicaton for multilingual angular project.
+
+Details:
+* Easy to use on both side HTML and Typescript
 * Easy to generate & merge i18n files .xlf format | `npm run generate-i18n`
-* Generated .xlf files are located in 'locale' folder
 * Multiple build for different languages | `npm run i18n-build`
-* Docker support, build on ngnix server | `docker-compose up`
+* Docker support, nginx using for server | `docker-compose up`
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 9.0.4.
 
@@ -68,8 +70,8 @@ Run `npm run start-en` for a dev server. Navigate to `http://localhost:4200/`. T
         </context-group>
       <target state="new">Hello World</target></trans-unit><trans-unit id="8f0301b64b90846d7bf84a0519e087ad3f788234" datatype="html">
         <source>
-  Bu yazı bir çok dilde görüntülenebilir.
-</source>
+          Bu yazı bir çok dilde görüntülenebilir.
+        </source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/app.component.html</context>
           <context context-type="linenumber">3</context>
@@ -96,6 +98,4 @@ Run `npm run i18n-build` to build the project. Extract 2 folder (tr and en folde
 ## Docker Build
 
 Run `docker-compose up` to dockerize the project. It use nginx, you can check settings from nginx.conf file.
-After run docker compose, run to app from `http://localhost/tr` or `http://localhost/en` 
-
-
+After run docker compose, run to app from `http://localhost/tr/` or `http://localhost/en/` 
