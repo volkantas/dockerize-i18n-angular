@@ -78,7 +78,7 @@ Run `npm run start-en` for a dev server. Navigate to `http://localhost:4200/`. T
           <context context-type="linenumber">3</context>
         </context-group>
       <target state="new">
-  This text is multilangual.
+  This text is multilingual.
 </target></trans-unit>
       <trans-unit id="88fe7b194cba7d237319098d3be9e96ee938ac21" datatype="html">
         <source>Typescript tarafında da dil desteği bu şekilde kullanılıyor.</source>
