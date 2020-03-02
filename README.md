@@ -4,8 +4,8 @@
 
 | Details |
 | :------|
-| Easy to use on both side HTML and Typescript   |
-| Easy to generate & merge i18n files .xlf format | `npm run generate-i18n` |
+| Easy to use with HTML and Typescript   |
+| Easy to generate & merge i18n files to .xlf format | `npm run generate-i18n` |
 | Multiple build for different languages | `npm run i18n-build`    |
 | Docker support, nginx using for server | `docker-compose up`    |
 
