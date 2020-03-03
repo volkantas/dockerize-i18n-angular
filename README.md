@@ -138,7 +138,7 @@ Run `npm run start-en` for a dev server. Navigate to `http://localhost:4200/`. T
 
 * Run `docker-compose up` to dockerize the project. 
 * It use nginx, you can check settings from [nginx.conf](https://github.com/volkantas/dockerize-i18n-angular/blob/master/nginx.conf) file.
-* After run docker compose, run to app from :
+* After docker compose, use that links for access :
 
 | Turkish  | English |
 | ------------- | ------------- |
