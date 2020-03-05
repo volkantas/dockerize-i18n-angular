@@ -22,6 +22,8 @@ RUN cd /app && npm run build-i18n
 FROM nginx:alpine
 RUN rm -rf /usr/share/nginx/html/*
 COPY nginx.conf /etc/nginx/nginx.conf
+# fixed unshown font icons with mime.types file and ngnix.conf > location ~* .(js|css|ttf|ttc|otf|eot|woff|woff2)$ {...
+COPY mime.types /etc/nginx/mime.types
 COPY --from=builder /app/dist /usr/share/nginx/html
 EXPOSE 80
 CMD ["nginx", "-g", "daemon off;"]

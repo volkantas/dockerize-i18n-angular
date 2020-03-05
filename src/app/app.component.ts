@@ -10,6 +10,6 @@ export class AppComponent {
     title = 'dockerize-i18n-angular';
 
     constructor(i18n: I18n) {
-        alert(i18n('Typescript tarafında da dil desteği bu şekilde kullanılıyor.'))
+        alert(i18n('Typescript tarafında da dil desteği bu şekilde kullanılıyor.'));
     }
 }

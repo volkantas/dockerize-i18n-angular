@@ -9,7 +9,8 @@
     "merge-i18n-files": "xliffmerge --profile xliffmerge.json tr en",
     "generate-i18n-ts": "node ./node_modules/@ngx-translate/i18n-polyfill/extractor/ngx-extractor -i 'src/**/*.ts' -f xlf -o src/locale/messages.xlf",
     "generate-i18n-html": "ng xi18n --out-file src/locale/messages.xlf --format xlf",
-    "generate-i18n": "npm run generate-i18n-html && npm run generate-i18n-ts && npm run merge-i18n-files"
+    "generate-i18n": "npm run generate-i18n-html && npm run generate-i18n-ts && npm run merge-i18n-files",
+    "lint": "ng lint"
   },
   "private": true,
   "dependencies": {

@@ -143,3 +143,8 @@ Run `npm run start-en` for a dev server. Navigate to `http://localhost:4200/`. T
 | Turkish  | English |
 | ------------- | ------------- |
 | `http://localhost/tr/`  | `http://localhost/en/`  |
+
+<br><br>
+## Lint
+
+* Run `npm run lint` to ts linting. 

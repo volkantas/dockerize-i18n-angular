@@ -23,11 +23,9 @@ import {I18n} from '@ngx-translate/i18n-polyfill';
     {
       provide: TRANSLATIONS,
       useFactory: (locale) => {
-        console.log(locale)
         /**
          * AOT buildi ise locale bilgisi dolu gelecek.
          */
-        // @ts-ignore
         return require(`raw-loader!../locale/messages.${locale}.xlf`).default;
       },
       deps: [LOCALE_ID]
